@@ -16,3 +16,11 @@ Given a year, report if it is a leap year.
 ## Perfect Sequence
 ### Problem Statement
 Given a sequence. Return "Yes" if the sequence is considered a perfect sequence. Otherwise, return "No"
+
+![alt text](https://github.com/riedmank/Prework-CodeChallenges/blob/master/perfect-sequence-success-screen-cap.jpg)
+
+## Sum of Rows
+### Problem Statement
+Given a matrix of integers. Return the sum of each row in a single dimensional array.
+
+[!alt text](
