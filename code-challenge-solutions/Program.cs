@@ -7,7 +7,10 @@ namespace code_challenge_solutions
         static void Main(string[] args)
         {
             //ArrayMaxResult();
-            LeapYearCalc();
+            //LeapYearCalc();
+            //Test Array
+            int[] testArray = new int[] { 0, 0, 0, 0 };
+            Console.WriteLine($"Array contains a perfect sequence: {PerfectSequence(testArray)}.");
         }
 
         static void ArrayMaxResult()
@@ -25,20 +28,18 @@ namespace code_challenge_solutions
             ScoreCalc(array, NumberGetter());
         }
 
-        static void ScoreCalc(int[] arr, int target)
+        static void ScoreCalc(int[] userArray, int target)
         {
-            //Store userInput from ArrayMaxResult method
-            int userTarget = target;
-            int[] userArray = arr;
+            //Counter for finding matches
             int counter = 0;
             foreach (int val in userArray)
             {
-                if (val == userTarget)
+                if (val == target)
                 {
                     counter++;
                 }
             }
-            Console.WriteLine($"User Score: {counter * userTarget}.");
+            Console.WriteLine($"User Score: {counter * target}.");
         }
 
         static int NumberGetter()
@@ -85,6 +86,31 @@ namespace code_challenge_solutions
                 {
                     Console.WriteLine($"{year} is not a Leap Year");
                 }
+            }
+        }
+
+        static string PerfectSequence(int[] userArray)
+        {
+            int sum = 0;
+            int product = 1;
+            foreach (int val in userArray)
+            {
+                //Discard negative values right away
+                if (val < 0)
+                {
+                    return "no";
+                }
+                sum += val;
+                product *= val;
+            }
+            //Compare sum and product
+            if (product == sum)
+            {
+                return "yes";
+            }
+            else
+            {
+                return "no";
             }
         }
     }
