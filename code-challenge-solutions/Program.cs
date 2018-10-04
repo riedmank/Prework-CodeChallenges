@@ -8,6 +8,7 @@ namespace code_challenge_solutions
         {
             //ArrayMaxResult();
             //LeapYearCalc();
+            //Test Array
             int[] testArray = new int[] { 0, 0, 0, 0 };
             Console.WriteLine($"Array contains a perfect sequence: {PerfectSequence(testArray)}.");
         }
@@ -94,6 +95,7 @@ namespace code_challenge_solutions
             int product = 1;
             foreach (int val in userArray)
             {
+                //Discard negative values right away
                 if (val < 0)
                 {
                     return "no";
@@ -101,6 +103,7 @@ namespace code_challenge_solutions
                 sum += val;
                 product *= val;
             }
+            //Compare sum and product
             if (product == sum)
             {
                 return "yes";
