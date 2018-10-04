@@ -61,6 +61,7 @@ namespace code_challenge_solutions
         static void LeapYearCalc()
         {
             int year = -1;
+            //Allows user to check years until they are finished
             while (year != 0)
             {
                 Console.WriteLine("Provide a year to see if it is a leap year. Enter 0 to quit.");
