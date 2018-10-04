@@ -6,7 +6,8 @@ namespace code_challenge_solutions
     {
         static void Main(string[] args)
         {
-            ArrayMaxResult();
+            //ArrayMaxResult();
+            LeapYearCalc();
         }
 
         static void ArrayMaxResult()
@@ -55,6 +56,35 @@ namespace code_challenge_solutions
             }
             //Return valid response
             return userInput;
+        }
+
+        static void LeapYearCalc()
+        {
+            int year = -1;
+            while (year != 0)
+            {
+                Console.WriteLine("Provide a year to see if it is a leap year. Enter 0 to quit.");
+                bool result = int.TryParse(Console.ReadLine(), out year);
+                if ((year % 4) == 0)
+                {
+                    if ((year % 100) != 0)
+                    {
+                        Console.WriteLine($"{year} is a Leap Year");
+                    }
+                    else if ((year % 100) == 0 && (year % 400) == 0)
+                    {
+                        Console.WriteLine($"{year} is a Leap Year");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{year} is not a Leap Year");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"{year} is not a Leap Year");
+                }
+            }
         }
     }
 }
