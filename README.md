@@ -23,4 +23,4 @@ Given a sequence. Return "Yes" if the sequence is considered a perfect sequence.
 ### Problem Statement
 Given a matrix of integers. Return the sum of each row in a single dimensional array.
 
-[!alt text](
+[!alt text](https://github.com/riedmank/Prework-CodeChallenges/blob/master/sum-of-rows-success-screen-cap.jpg)
