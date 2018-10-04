@@ -6,3 +6,9 @@ Given an array select a number that exists, and output the computated "score". T
 Create a Console application that requests 5 numbers between 1-10. Output the array to the console and Ask the user to select a number. After the selection, output the "score" of the number chosen.
 
 ![alt text](https://github.com/riedmank/Prework-CodeChallenges/blob/master/max-array-result-success-screen-cap.jpg)
+
+## Leap Year Calculator
+### Problem Statement
+Given a year, report if it is a leap year.
+
+![alt text]
