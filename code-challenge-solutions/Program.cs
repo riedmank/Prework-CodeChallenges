@@ -8,9 +8,16 @@ namespace code_challenge_solutions
         {
             //ArrayMaxResult();
             //LeapYearCalc();
-            //Test Array
-            int[] testArray = new int[] { 0, 0, 0, 0 };
-            Console.WriteLine($"Array contains a perfect sequence: {PerfectSequence(testArray)}.");
+            ////Test Array
+            //int[] testArray = new int[] { 0, 0, 0, 0 };
+            //Console.WriteLine($"Array contains a perfect sequence: {PerfectSequence(testArray)}.");
+            //int[,] myArray = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } };
+            //int[] answer = new int[SumOfRows(myArray).GetLength(0)];
+            //answer = SumOfRows(myArray);
+            //foreach (int val in answer)
+            //{
+            //    Console.WriteLine($"Sum: {val}.");
+            //}
         }
 
         static void ArrayMaxResult()
@@ -112,6 +119,27 @@ namespace code_challenge_solutions
             {
                 return "no";
             }
+        }
+
+        static int[] SumOfRows(int[,] userArray)
+        {
+            //Set up answer array
+            int[] answer = new int[userArray.GetLength(0)];
+            //Iterate through outer array
+            for (int i = 0; i < userArray.GetLength(0); i++)
+            {
+                //Reset sum counter after iterating through every inner array
+                int sum = 0;
+                //Iterate through inner array
+                for (int j = 0; j < userArray.GetLength(1); j++)
+                {
+                    //Add inner array value to sum
+                    sum += userArray[i, j];
+                }
+                //Put sum into answer array
+                answer[i] = sum;
+            }
+            return answer;
         }
     }
 }
