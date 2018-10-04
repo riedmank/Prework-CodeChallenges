@@ -11,4 +11,8 @@ Create a Console application that requests 5 numbers between 1-10. Output the ar
 ### Problem Statement
 Given a year, report if it is a leap year.
 
-![alt text]
+![alt text](https://github.com/riedmank/Prework-CodeChallenges/blob/master/leap-year-calc-success-screen-cap.jpg)
+
+## Perfect Sequence
+### Problem Statement
+Given a sequence. Return "Yes" if the sequence is considered a perfect sequence. Otherwise, return "No"
